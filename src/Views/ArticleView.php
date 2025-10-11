@@ -1,6 +1,6 @@
 <?php
 
-namespace Views;
+namespace App\Views;
 
 class ArticleView
 {

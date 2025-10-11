@@ -1,12 +1,14 @@
 <?php
 
-use Controllers\ArticleController;
-use Views\ArticleView;
-use Models\Article;
+use App\Controllers\ArticleController;
+use App\Views\ArticleView;
+use App\Models\Article;
 
-require_once('src/Models/Article.php');
-require_once('src/Views/ArticleView.php');
-require_once('src/Controllers/ArticleController.php');
+require __DIR__.'/vendor/autoload.php';
+
+//require_once('src/Models/Article.php');
+//require_once('src/Views/ArticleView.php');
+//require_once('src/Controllers/ArticleController.php');
 
 error_reporting(E_ALL);
 ini_set('display_errors', 'on');
