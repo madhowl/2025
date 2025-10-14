@@ -15,8 +15,8 @@
 
     <div class="nav">
         <a href="/">Главная</a>
-        <a href="articles">Статьи</a>
-        <a href="calc">Калькулятор</a>
+        <a href="articles.php">Статьи</a>
+        <a href="calc.php">Калькулятор</a>
         <a href="#news">Новости</a>
         <a href="#contact">Контакты</a>
     </div>
