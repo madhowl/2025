@@ -6,6 +6,8 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/madhowl/2025) ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/madhowl/2025?color=red)
 [![wakatime](https://wakatime.com/badge/github/madhowl/2025.svg)](https://wakatime.com/@MadHowl/projects/kbiuzlehsm) [![wakatime](https://wakatime.com/badge/github/madhowl/2025.svg)](https://wakatime.com/badge/github/madhowl/2025)
 
+--- 
+
 🚀 Быстрый старт
 
 1. Убедитесь, что у вас установлен PHP 8.1+ и Composer.
@@ -33,6 +35,7 @@ php -S localhost:8000
 * Сайт: http://localhost:8000 
 * Админка: http://localhost:8000/admin
 
+--- 
 🧱 Основные возможности (в разработке)
 
 * 📝 Управление страницами и статьями через админ-панель
@@ -42,7 +45,16 @@ php -S localhost:8000
 * ⚙️ Простой конфигурационный файл (config.php)
 * 📁 Модульная структура: ядро / админка / фронтенд
 
+
+--- 
+
+[ТЕХНИЧЕСКОЕ ЗАЛАНИЕ НА ПРОЕКТ](/docs/specifikation.md)
+
+--- 
+
 ### [ДОКУМЕНТАЦИЯ -> Уроки -> Задания -> Решения ](/docs/index.md)
+
+--- 
      
 
 

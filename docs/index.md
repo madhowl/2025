@@ -1,6 +1,15 @@
-## Объектно-ориентированного программирования
+--- 
+#### Постановка задачи
+
+[ТЕХНИЧЕСКОЕ ЗАЛАНИЕ НА ПРОЕКТ](/docs/specifikation.md)
+
+--- 
+#### Объектно-ориентированное программирование
+
 [PHP ООП](/docs/oop.md)
 
 [SOLID](/docs/SOLID.md)
 
-[Fromt Controller and MVC](/docs/MVC.md)
+[Front Controller and MVC](/docs/MVC.md)
+
+--- 
