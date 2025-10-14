@@ -48,7 +48,7 @@ php -S localhost:8000
 
 --- 
 
-[ТЕХНИЧЕСКОЕ ЗАЛАНИЕ НА ПРОЕКТ](/docs/specifikation.md)
+[ТЕХНИЧЕСКОЕ ЗАДАНИЕ НА ПРОЕКТ](/docs/specifikation.md)
 
 --- 
 
