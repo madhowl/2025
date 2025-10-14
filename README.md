@@ -4,7 +4,7 @@
 
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/madhowl/2025) ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/madhowl/2025?color=red)
-[![wakatime](https://wakatime.com/badge/github/madhowl/2024.svg)](https://wakatime.com/badge/github/madhowl/2024) [![wakatime](https://wakatime.com/badge/user/c7d1fad3-b852-453a-a62e-dbeca584c958/project/ef3c6f7c-4f54-473c-bd89-36def546024c.svg)](https://wakatime.com/badge/user/c7d1fad3-b852-453a-a62e-dbeca584c958/project/ef3c6f7c-4f54-473c-bd89-36def546024c)
+[![wakatime](https://wakatime.com/badge/github/madhowl/2025.svg)](https://wakatime.com/@MadHowl/projects/kbiuzlehsm) [![wakatime](https://wakatime.com/badge/github/madhowl/2025.svg)](https://wakatime.com/badge/github/madhowl/2025)
 
 🚀 Быстрый старт
 
@@ -41,6 +41,8 @@ php -S localhost:8000
 * 🔐 Базовая система авторизации администратора
 * ⚙️ Простой конфигурационный файл (config.php)
 * 📁 Модульная структура: ядро / админка / фронтенд
+
+### [ДОКУМЕНТАЦИЯ -> Уроки -> Задания -> Решения ](/docs/index.md)
      
 
 
