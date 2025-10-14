@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    margin: auto;
 }
 .container {
     width: 80%;
@@ -33,6 +34,7 @@ body {
     padding: 1em;
     background-color: #f9f9f9;
 }
+
 .articles {
     width: 70%;
     padding: 1em;
@@ -46,4 +48,6 @@ footer {
     text-align: center;
     padding: 1em;
     flex-shrink: 0;
+    margin-top: auto;
+    margin-bottom: 15px;
 }
