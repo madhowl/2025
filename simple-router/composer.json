@@ -1,0 +1,27 @@
+{
+  "name": "madhowl/simple-router",
+  "description": "Простой и гибкий роутер для PHP с поддержкой параметров в URL и кастомной 404-страницей.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "MadHowl",
+      "email": "madhowl@yandex.ru"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "MadHowl\\SimpleRouter\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MadHowl\\SimpleRouter\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
