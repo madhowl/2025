@@ -13,5 +13,7 @@
             "email": "madhowl@yandex.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "filp/whoops": "^2.18"
+    }
 }
