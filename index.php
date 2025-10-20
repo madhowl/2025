@@ -17,6 +17,7 @@ $whoops->register();
 // -----------------
 $h =new \App\Core\Helper();// класс помошник
 $config = require __DIR__.'/config/settings.php';
+$h::dd($config);
 // создаём экземпляры классов
 $article = new Article();
 $article_view = new ArticleView();
