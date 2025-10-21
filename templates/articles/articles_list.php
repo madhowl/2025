@@ -1,8 +1,8 @@
-<?php include_once ('./templates/header.php');?>
+<?php include_once (TEMPLATES_PATH.'/header.php');?>
 
 <div class="content">
     <div class="sidebar">
-        <?php include_once ('./templates/sidebar.php');?>
+        <?php include_once (TEMPLATES_PATH.'/sidebar.php');?>
     </div>
 
     <div class="articles">
@@ -16,5 +16,5 @@
     </div>
 </div>
 
-<?php include_once ('./templates/footer.php');?>
+<?php include_once (TEMPLATES_PATH.'/footer.php');?>
     

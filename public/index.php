@@ -4,7 +4,7 @@ use App\Controllers\ArticleController;
 use App\Views\ArticleView;
 use App\Models\Article;
 
-require __DIR__.'/vendor/autoload.php';  // composer autoload PSR-4
+require '../vendor/autoload.php';  // composer autoload PSR-4
 
  /* whoops — это платформа обработки ошибок для PHP.
  * «Из коробки» он предоставляет красивый интерфейс ошибок,
@@ -16,7 +16,9 @@ $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->register();
 // -----------------
 $h =new \App\Core\Helper();// класс помошник
-$config = require __DIR__.'/config/settings.php';
+$config = require '../config/settings.php';
+
+
 // создаём экземпляры классов
 $article = new Article();
 $article_view = new ArticleView();
@@ -28,13 +30,13 @@ $uri = $_SERVER['REQUEST_URI'];
 // проверяем совпадения маршрутов
 switch ($uri) {
     case '/':
-        include_once('./templates/pages/index.php');
+        include_once('../templates/pages/index.php');
         break;
     case '/articles':
         $article_controller->showArticlesList();
         break;
     case '/calc':
-        include_once ('./templates/pages/calc.php');
+        include_once('../templates/pages/calc.php');
         break;
     default:
         include_once('./templates/pages/404.php');
