@@ -20,7 +20,7 @@ class ArticleController
     public function showArticlesList()
     {
         $articles = $this->article->all();
-        $path = $_SERVER['DOCUMENT_ROOT'] . '/templates/articles/articles_list.php';
+        $path = TEMPLATES_PATH.'/articles/articles_list.php';
         $this->articleView->showArticlesList($path, $articles);
     }
 
