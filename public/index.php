@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\ArticleController;
+use App\Models\Category;
 use App\Views\ArticleView;
 use App\Models\Article;
 
@@ -22,7 +23,8 @@ $config = require '../config/settings.php';
 // создаём экземпляры классов
 $article = new Article();
 $article_view = new ArticleView();
-$article_controller = new ArticleController($article, $article_view);
+$category = new Category();
+$article_controller = new ArticleController($article, $article_view, $category);
 
 // получаем URI
 $uri = $_SERVER['REQUEST_URI'];
@@ -30,15 +32,15 @@ $uri = $_SERVER['REQUEST_URI'];
 // проверяем совпадения маршрутов
 switch ($uri) {
     case '/':
-        include_once('../templates/pages/index.php');
+        include_once(TEMPLATES_PATH.'/pages/index.php');
         break;
     case '/articles':
         $article_controller->showArticlesList();
         break;
     case '/calc':
-        include_once('../templates/pages/calc.php');
+        include_once(TEMPLATES_PATH.'/pages/calc.php');
         break;
     default:
-        include_once('./templates/pages/404.php');
+        include_once(TEMPLATES_PATH.'/pages/404.php');
         break;
 }

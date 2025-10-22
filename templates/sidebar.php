@@ -1,6 +1,12 @@
 <h2>Категории:</h2>
 <ul>
-    <li><a href="#">Категория 1</a></li>
-    <li><a href="#">Категория 2</a></li>
-    <li><a href="#">Категория 3</a></li>
+    <?php
+    if (isset($categories)){
+        foreach ($categories as $category){
+            echo '<li><a href="category/' . $category . '">' . $category . '</a></li>';
+        }
+    } else{
+        echo 'Categories not found';
+    }
+    ?>
 </ul>

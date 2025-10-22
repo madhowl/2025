@@ -10,12 +10,13 @@ namespace App\Core;
  */
 class FileManager
 {
+    use \App\Traits\Helper;
     private $contentDir;
 
-    public function __construct($contentDir = __DIR__ . '/../../content')
+    public function __construct($contentDir = CONTENT_PATH)
     {
         // Приводим путь к абсолютному и убираем лишние слэши
-        $this->contentDir = rtrim(realpath($contentDir), '/');
+       $this->contentDir = rtrim(realpath($contentDir), '/');
     }
 
     /**
