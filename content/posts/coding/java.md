@@ -1,9 +1,6 @@
-{'title' => 'java',
-'description' => 'java description',
-'cover_image' => ''
-}
+{"title": "java", "description": "java description", "cover_image": "/images/java.jpeg"}
 ---
 # java
-- 1
+- 22
 - 2
 - 3

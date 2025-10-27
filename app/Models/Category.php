@@ -13,10 +13,16 @@ class Category
         $this->fm = new FileManager();
 
     }
-    public function getCategories()
-    {
+//    public function getCategories()
+//    {
+//        $dirs = $this->fm->listDirs('posts');
+//        return array_map(fn($d) => basename($d), $dirs);
+//    }
+    public function getCategories() {
         $dirs = $this->fm->listDirs('posts');
-        return array_map(fn($d) => basename($d), $dirs);
+        return array_map(function($d) {
+            return basename($d);
+        }, $dirs);
     }
 
 }
