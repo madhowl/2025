@@ -1,0 +1,20 @@
+<?php $this->extend('base.html'); ?>
+
+<?php $this->startBlock('title'); ?>
+Homepage
+<?php $this->endBlock(); ?>
+
+<?php $this->startBlock('content'); ?>
+<h2>Welcome!</h2>
+<h3>Hello, <?= htmlspecialchars($user) ?>!</h3>
+<p>This is the homepage content.</p>
+<?php $this->endBlock(); ?>
+
+//      index.php
+
+<?php
+require_once 'TemplateEngine.php';
+
+$engine = new TemplateEngine(__DIR__ . '/templates');
+
+echo $engine->render('child.html', ['user' => 'Alice']);
