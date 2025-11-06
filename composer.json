@@ -14,6 +14,8 @@
         }
     ],
     "require": {
-        "filp/whoops": "^2.18"
+        "filp/whoops": "^2.18",
+        "miladrahimi/phprouter": "5.*",
+        "twig/twig": "^3.22"
     }
 }

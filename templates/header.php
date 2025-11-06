@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой сайт</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
@@ -15,8 +15,8 @@
 
     <div class="nav">
         <a href="/">Главная</a>
-        <a href="articles">Статьи</a>
-        <a href="calc">Калькулятор</a>
+        <a href="/articles">Статьи</a>
+        <a href="/calc">Калькулятор</a>
         <a href="#news">Новости</a>
         <a href="#contact">Контакты</a>
     </div>

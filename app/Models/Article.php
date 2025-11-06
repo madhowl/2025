@@ -28,5 +28,13 @@ class Article
         return $this->articles;
     }
 
+    public function getArticleById(int $id)
+    {
+
+        $article = ['article' => ['title' => 'Title ' . $id, 'content' => 'Content ' . $id]];
+
+        return $article;
+    }
+
 
 }

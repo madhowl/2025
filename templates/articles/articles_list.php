@@ -6,10 +6,13 @@
     </div>
 
     <div class="articles">
-        <?php foreach ($articles as $article) { ?>
+        <?php $a =0;
+        foreach ($articles as $article) {
+            $a++; ?>
         <div class="article">
             <h3><?php echo $article['title']?></h3>
             <p><?php echo $article['content']?></p>
+            <a href="/article/<?=$a?>"><?=$article['title']?></a>
         </div>
         <?php };?>
 

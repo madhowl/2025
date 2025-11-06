@@ -3,6 +3,9 @@
 use App\Controllers\ArticleController;
 use App\Views\ArticleView;
 use App\Models\Article;
+use MiladRahimi\PhpRouter\Router;
+use MiladRahimi\PhpRouter\Exceptions\RouteNotFoundException;
+use Laminas\Diactoros\Response\HtmlResponse;
 
 require '../vendor/autoload.php';  // composer autoload PSR-4
 
@@ -20,25 +23,37 @@ $config = require '../config/settings.php';
 
 
 // создаём экземпляры классов
+$loader = new \Twig\Loader\FilesystemLoader(TEMPLATES_PATH);
+$twig = new \Twig\Environment($loader, []);
 $article = new Article();
-$article_view = new ArticleView();
+$article_view = new ArticleView($twig);
 $article_controller = new ArticleController($article, $article_view);
 
-// получаем URI
-$uri = $_SERVER['REQUEST_URI'];
 
-// проверяем совпадения маршрутов
-switch ($uri) {
-    case '/':
-        include_once('../templates/pages/index.php');
-        break;
-    case '/articles':
-        $article_controller->showArticlesList();
-        break;
-    case '/calc':
-        include_once('../templates/pages/calc.php');
-        break;
-    default:
-        include_once('./templates/pages/404.php');
-        break;
-}
+
+$router = Router::create();
+$router->get('/', function () use ($twig) {
+    $twig->render('/pges/index.php', []);
+    //include_once('../templates/pages/index.php');
+});
+$router->get('/calc', function () {
+    include_once('../templates/pages/calc.php');
+});
+$router->get('/articles', $article_controller, 'showArticlesList');
+$router->get('/article/{id}', [$article_controller, 'showArticleById']);
+
+$router->dispatch();
+/*try {
+    $router->dispatch();
+} catch (RouteNotFoundException $e) {
+    // It's 404!
+    //$router->getPublisher()->publish(new HtmlResponse('Not found.', 404));
+    include_once('../templates/pages/404.php');
+} catch (Throwable $e) {
+    // Log and report...
+    $router->getPublisher()->publish(new HtmlResponse('Internal error.', 500));
+}    */
+
+
+
+
